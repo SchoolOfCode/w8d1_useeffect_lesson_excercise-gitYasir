@@ -5,6 +5,7 @@ function Input({ onData }) {
   const [text, setText] = useState("");
 
   function handleSubmit(e) {
+    console.log("submit clicked");
     e.preventDefault();
     onData(text);
     setText("");
